@@ -6,7 +6,7 @@ function MainContent(props) {
   return (
     <>
       <CardDark>
-        <section className="h-full  dark:bg-slate-700">{children}</section>
+        <section className="h-full pb-3 dark:bg-slate-700">{children}</section>
       </CardDark>
     </>
   );

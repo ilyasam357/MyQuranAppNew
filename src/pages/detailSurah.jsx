@@ -33,8 +33,8 @@ function DetailSurah() {
         <CardDark>
           <div className="w-4/5 block justify-between md:flex mx-auto mb-3 mt-3 bg-green-500 dark:bg-slate-900 text-white p-5 rounded-xl">
             <div>
-              <h2>{surahData.nama}</h2>
-              <p>
+              <h2 className="text-2xl font-bold arabic">{surahData.nama}</h2>
+              <p className="text-lg font-normal mt-2">
                 {surahData.nama_latin} - {surahData.arti}
               </p>
             </div>
@@ -51,12 +51,12 @@ function DetailSurah() {
               key={ayat.nomor}
               className="w-4/5 mx-auto mb-3 bg-green-500 py-7 px-4 dark:bg-slate-900"
             >
-              <article className="text-right text-2xl font-medium text-white  arabic">
+              <article className="text-right text-2xl font-normal text-white leading-[3] arabic">
                 {ayat.ar}
               </article>
-              <div className="flex text-lg text-white font-medium">
-                <p>{ayat.nomor}.</p>
-                <p>{ayat.idn}</p>
+              <div className="flex text-lg text-white font-normal mt-3">
+                <p className="mr-2 text-base">{ayat.nomor}.</p>
+                <p className="text-base">{ayat.idn}</p>
               </div>
             </div>
           ))}
